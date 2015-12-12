@@ -74,9 +74,9 @@ function ygf_gallery_clearing($output, $attr) {
     $i = 0;
     foreach ( $attachments as $id => $attachment ) {
         if( isset($attr['link']) && 'file' == $attr['link']){
-           $link=  '<a href="'.wp_get_attachment_url( $id ).'">'.wp_get_attachment_image( $id, $size, false, array('class' => 'attachment-image th' ) ).'</a>';
+           $link=  '<a href="'.wp_get_attachment_url( $id ).'">'.wp_get_attachment_image( $id, $size, false, array('class' => 'attachment-image thumbnail' ) ).'</a>';
         }else{
-            $link = '<a href="'.get_attachment_link( $id ).'">'.wp_get_attachment_image( $id, $size, false, array('class' => 'attachment-image th' ) ).'</a>';
+            $link = '<a href="'.get_attachment_link( $id ).'">'.wp_get_attachment_image( $id, $size, false, array('class' => 'attachment-image thumbnail' ) ).'</a>';
         }
 
         $output .= "<{$itemtag} class='gallery-item'>";

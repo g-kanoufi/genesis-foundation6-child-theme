@@ -68,7 +68,7 @@ function ygf_add_row_wrap_class($attributes){
 
 // Archive page featured image class
 function ygf_featured_image_class( $attributes ) {
-    $attributes['class'] = 'th';
+    $attributes['class'] = 'thumbnail';
     return $attributes;
 
 }
