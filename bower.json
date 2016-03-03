@@ -21,7 +21,10 @@
     "tests"
   ],
   "dependencies": {
-    "foundation-sites": "~6.0.3",
+    "foundation-sites": "~6.2.0",
     "foundation-icon-fonts": "*"
+  },
+  "resolutions": {
+    "jquery": "~2.2.0"
   }
 }
